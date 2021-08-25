@@ -43,7 +43,7 @@ const showLeftList = (info) => {
                 n = "\n";
                 last = s;
             }
-            leftList.push(`${k}, ${n}`);
+            leftList.push(`${n}${k}, `);
         }
     });
     console.log(leftList.join(""));
