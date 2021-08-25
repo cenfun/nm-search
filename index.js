@@ -34,12 +34,19 @@ const searchItem = (item) => {
 
 const showLeftList = (info) => {
     const leftList = [];
+    let last = "a";
     Object.keys(info).forEach(k => {
+        let n = "";
         if (!info[k]) {
-            leftList.push(k);
+            const s = k.substr(0, 1);
+            if (s !== last) {
+                n = "\n";
+                last = s;
+            }
+            leftList.push(`${k}, ${n}`);
         }
     });
-    console.log(leftList.join(", "));
+    console.log(leftList.join(""));
 };
 
 
