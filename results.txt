@@ -1,4 +1,4 @@
-ab, ae, ag, ah, ai, an, ar, at, aw, ay, az, 
+ab, ae, ag, ah, ai, an, ar, at, aw, ay, az,
 ba, bt, bu, by,
 ca, ce, ch,
 da, dh, di, dj, ds, dv, dz,

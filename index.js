@@ -79,11 +79,11 @@ const start = async () => {
     
     let i = 0;
     for (const item of list) {
-        const per = `${((i / list.length) * 100).toFixed(2)}%`;
-        console.log(`${i}/${list.length}`, item, per);
         info[item] = await searchItem(item);
         fs.writeFileSync(file, JSON.stringify(info, null, 4));
         i ++;
+        const per = `${((i / list.length) * 100).toFixed(2)}%`;
+        console.log(`${i}/${list.length}`, item, per, info[item]);
     }
 
     showLeftList(info);
