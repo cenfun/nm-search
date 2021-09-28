@@ -104,7 +104,7 @@
     "dy": true,
     "dz": false,
     "ea": false,
-    "eb": false,
+    "eb": true,
     "ec": true,
     "ed": true,
     "ee": true,
